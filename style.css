@@ -2524,48 +2524,8 @@ MUSIC PLAYER
 =============================== */
 
 
-.music-player {
 
 
-position:fixed;
-
-
-bottom:30px;
-
-
-left:30px;
-
-
-
-width:330px;
-
-
-padding:20px;
-
-
-border-radius:25px;
-
-
-display:flex;
-
-
-flex-direction:column;
-
-
-gap:15px;
-
-
-
-z-index:900;
-
-
-
-animation:
-
-slideUp .8s ease;
-
-
-}
 
 
 
@@ -2617,111 +2577,8 @@ font-size:14px;
 
 
 
-.music-controls {
 
 
-display:flex;
-
-
-justify-content:center;
-
-
-gap:15px;
-
-
-}
-
-
-
-
-
-.music-controls button {
-
-
-width:40px;
-
-
-height:40px;
-
-
-border-radius:50%;
-
-
-background:
-
-rgba(255,255,255,.1);
-
-
-transition:.3s;
-
-
-}
-
-
-
-
-
-.music-controls button:hover {
-
-
-background:#00d9ff;
-
-
-transform:scale(1.1);
-
-
-}
-
-
-
-
-
-.music-progress {
-
-
-height:6px;
-
-
-background:
-
-rgba(255,255,255,.15);
-
-
-border-radius:10px;
-
-
-overflow:hidden;
-
-
-}
-
-
-
-
-
-.music-progress div {
-
-
-width:40%;
-
-
-height:100%;
-
-
-background:
-
-linear-gradient(
-
-90deg,
-
-#00d9ff,
-
-#ff3cac
-
-);
-
-
-}
 
 
 
@@ -3765,30 +3622,8 @@ left:-40px!important;
 
 
 
-.music-player {
-
-
-left:50%;
-
-
-transform:
-
-translateX(-50%);
-
-
-
-width:90%;
-
 
 }
-
-
-
-
-}
-
-
-
 
 
 

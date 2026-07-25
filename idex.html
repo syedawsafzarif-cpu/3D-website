@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Syed Awsaf Zarif | Developer • Gamer • Creator
+    </title>
+
+    <meta name="description"
+          content="Official Portfolio of Syed Awsaf Zarif">
+
+    <meta name="keywords"
+          content="Syed Awsaf Zarif, Portfolio, Developer, Gamer, Creator">
+
+    <meta name="author"
+          content="Syed Awsaf Zarif">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+          content="Syed Awsaf Zarif">
+
+    <meta property="og:description"
+          content="Developer • Gamer • Creator">
+
+    <meta property="og:image"
+          content="IMG_0990.PNG">
+
+    <meta property="og:type"
+          content="website">
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Syed Awsaf Zarif">
+
+    <meta name="twitter:description"
+          content="Developer • Gamer • Creator">
+
+    <meta name="twitter:image"
+          content="IMG_0990.PNG">
+
+    <!-- Favicon -->
+
+    <link rel="icon"
+          href="IMG_0990.PNG">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+     Loading Screen
+========================= -->
+
+<div id="loader">
+
+    <div class="loader-logo">
+
+        SAZ
+
+    </div>
+
+    <div class="loader-bar">
+
+        <span></span>
+
+    </div>
+
+    <p>
+
+        Initializing Portfolio...
+
+    </p>
+
+</div>
+
+<!-- =========================
+     Aurora Background
+========================= -->
+
+<div class="aurora">
+
+    <div class="blob blob1"></div>
+
+    <div class="blob blob2"></div>
+
+    <div class="blob blob3"></div>
+
+</div>
+
+<!-- Particle Canvas -->
+
+<canvas id="particles"></canvas>
+
+<!-- Cursor Glow -->
+
+<div id="cursor-glow"></div>
+
+<!-- Scroll Progress -->
+
+<div id="scroll-progress"></div>
+
+<!-- Scroll To Top -->
+
+<button id="scrollTop">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- =========================
+     Navigation
+========================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="IMG_0990.PNG"
+     alt="Syed Awsaf Zarif">
+
+<span>
+
+SAZ
+
+</span>
+
+</div>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="#home">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#about">
+
+About
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#skills">
+
+Skills
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#projects">
+
+Projects
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#socials">
+
+Socials
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="nav-actions">
+
+<button id="themeToggle"
+        aria-label="Toggle Theme">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<button id="menuToggle"
+        aria-label="Open Menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- =========================
+     Floating Music Player
+========================= -->
+
+<div class="music-player">
+
+<div class="music-top">
+
+<div>
+
+<h4>
+
+Now Playing
+
+</h4>
+
+<p>
+
+music.mp3
+
+</p>
+
+</div>
+
+<button id="musicToggle">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+</div>
+
+<div class="music-progress">
+
+<div class="progress"></div>
+
+</div>
+
+<div class="music-bottom">
+
+<span id="currentTime">
+
+0:00
+
+</span>
+
+<input type="range"
+       id="volume"
+       min="0"
+       max="1"
+       step="0.01"
+       value="0.6">
+
+<span id="duration">
+
+0:00
+
+</span>
+
+</div>
+
+<audio id="music" loop>
+
+<source src="music.mp3">
+
+</audio>
+
+</div>
+
+<!-- =========================
+     Hero
+========================= -->
+
+<section id="home"
+         class="hero">
+
+<div class="hero-content glass-card rgb-border">
+
+<div class="status">
+
+<span class="status-dot"></span>
+
+Available for Collaboration
+
+</div>
+
+<img src="IMG_0990.PNG"
+     alt="Portrait of Syed Awsaf Zarif"
+     class="profile">
+
+<h1>
+
+Syed Awsaf Zarif
+
+</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+
+I'm a passionate developer, gamer, and creator who enjoys building modern websites, experimenting with technology, and designing premium digital experiences inspired by Apple, gaming, and futuristic interfaces.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects"
+   class="primary-btn">
+
+<i class="fa-solid fa-code"></i>
+
+View Projects
+
+</a>
+
+<a href="#contact"
+   class="secondary-btn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Contact Me
+
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div>
+
+<h3>
+
+10+
+
+</h3>
+
+<p>
+
+Projects
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+100%
+
+</h3>
+
+<p>
+
+Self Learning
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+∞
+
+</h3>
+
+<p>
+
+Creativity
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+     About
+========================= -->
+
+<section id="about">
+
+    <div class="section-title">
+
+        <h2>About Me</h2>
+
+        <p>
+            Passionate about technology, creativity, and building beautiful digital experiences.
+        </p>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div class="card glass-card tilt-card">
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3>Developer</h3>
+
+            <p>
+                I enjoy building responsive websites, experimenting with modern web technologies,
+                and continuously improving my programming skills.
+            </p>
+
+        </div>
+
+        <div class="card glass-card tilt-card">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            <h3>Gamer</h3>
+
+            <p>
+                Gaming inspires my creativity and helps me appreciate polished design,
+                smooth animations, and immersive user experiences.
+            </p>
+
+        </div>
+
+        <div class="card glass-card tilt-card">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>Creator</h3>
+
+            <p>
+                I enjoy turning ideas into reality through design, code,
+                and constant learning.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     Skills
+========================= -->
+
+<section id="skills">
+
+    <div class="section-title">
+
+        <h2>Skills</h2>
+
+        <p>Always learning and improving.</p>
+
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card glass-card">
+
+            <h3>HTML</h3>
+
+            <div class="skill-bar">
+
+                <span style="width:95%"></span>
+
+            </div>
+
+        </div>
+
+        <div class="skill-card glass-card">
+
+            <h3>CSS</h3>
+
+            <div class="skill-bar">
+
+                <span style="width:90%"></span>
+
+            </div>
+
+        </div>
+
+        <div class="skill-card glass-card">
+
+            <h3>JavaScript</h3>
+
+            <div class="skill-bar">
+
+                <span style="width:80%"></span>
+
+            </div>
+
+        </div>
+
+        <div class="skill-card glass-card">
+
+            <h3>UI / UX Design</h3>
+
+            <div class="skill-bar">
+
+                <span style="width:85%"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     Projects
+========================= -->
+
+<section id="projects">
+
+    <div class="section-title">
+
+        <h2>Projects</h2>
+
+        <p>Some of my favorite work.</p>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <article class="project-card glass-card tilt-card">
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                My Apple-inspired futuristic portfolio built with HTML, CSS and JavaScript.
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#">Live Demo</a>
+
+                <a href="#">Source Code</a>
+
+            </div>
+
+        </article>
+
+        <article class="project-card glass-card tilt-card">
+
+            <h3>Coming Soon</h3>
+
+            <p>
+                More exciting projects will be added here soon.
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#">Coming Soon</a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     Socials
+========================= -->
+
+<section id="socials">
+
+    <div class="section-title">
+
+        <h2>Let's Connect</h2>
+
+        <p>Find me across my favorite platforms.</p>
+
+    </div>
+
+    <div class="social-grid">
+
+        <a href="https://www.instagram.com/syed_awsaf_zarif/?hl=en"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-card instagram">
+
+            <i class="fab fa-instagram"></i>
+
+            <span>Instagram</span>
+
+        </a>
+
+        <a href="https://snapchat.com/t/u5A3s7uX"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-card snapchat">
+
+            <i class="fab fa-snapchat"></i>
+
+            <span>Snapchat</span>
+
+        </a>
+
+        <a href="https://discord.com/invite/gjMPNrNsXy"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-card discord">
+
+            <i class="fab fa-discord"></i>
+
+            <span>Discord</span>
+
+        </a>
+
+        <a href="https://www.roblox.com/users/4768178750/profile"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-card roblox">
+
+            <i class="fas fa-cube"></i>
+
+            <span>Roblox</span>
+
+        </a>
+
+        <a href="mailto:syedawsafzarif@gmail.com"
+           class="social-card email">
+
+            <i class="fas fa-envelope"></i>
+
+            <span>Email</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     Contact
+========================= -->
+
+<section id="contact">
+
+    <div class="section-title">
+
+        <h2>Contact Me</h2>
+
+        <p>Feel free to send me a message.</p>
+
+    </div>
+
+    <form
+        class="contact-form glass-card"
+        action="https://formspree.io/f/xgoglbqa"
+        method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required>
+
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required></textarea>
+
+        <button type="submit">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+            Send Message
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- =========================
+     Footer
+========================= -->
+
+<footer>
+
+    <h3>Syed Awsaf Zarif</h3>
+
+    <p>
+
+        Developer • Gamer • Creator
+
+    </p>
+
+    <div class="footer-socials">
+
+        <a href="https://www.instagram.com/syed_awsaf_zarif/?hl=en" target="_blank" rel="noopener noreferrer">
+
+            <i class="fab fa-instagram"></i>
+
+        </a>
+
+        <a href="https://discord.com/invite/gjMPNrNsXy" target="_blank" rel="noopener noreferrer">
+
+            <i class="fab fa-discord"></i>
+
+        </a>
+
+        <a href="mailto:syedawsafzarif@gmail.com">
+
+            <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+    </div>
+
+    <p>
+
+        Designed & Developed by
+        Syed Awsaf Zarif © 2026
+
+    </p>
+
+</footer>
+
+<!-- Google Analytics -->
+<!-- Replace G-XXXXXXXXXX with your Measurement ID -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-XXXXXXXXXX');
+
+</script>
+-->
+
+<script src="script.js"></script>
+
+</body>
+</html>
